@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS FLEXBOX</title>
+	<style type="text/css">
+		body{
+			background-color: #eeee;
+		}
+		#heading{
+		margin-top: 0px;
+		height: 60px;
+		width: 100%;
+		background-color: green;
+		color: white;
+		text-align: center;
+		font-size: 30px;
+
+		
+	}
+	.gallery{
+		margin: 20px;
+		width: 100%;
+		height: 1500px;
+		padding: 10px;
+		background-color:#eeee;
+        margin: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		
+	}
+	.images{
+		width:400px;
+		height: 300px;
+		background-color: white;
+		margin: 20px;
+		border-radius: 20px;
+	}
+	.images img{
+		height: 100%;
+		width: 100%;
+	}
+	#ph5{
+		height: 300px;
+		width: 500px;
+	}
+	#ph4{
+		flex-grow: 2;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="heading">
+		<h1>IMAGE GALLERY</h1>
+	</div>
+	<div class="gallery">
+		<div class="images"><img src="https://yvdirectory.org/rivu/img1.jpg"></div>
+		<div class="images"><img src="https://yvdirectory.org/rivu/image2.jpg"></div>
+		<div class="images"><img src="https://yvdirectory.org/rivu/image3.jpg"></div>
+		<div class="images" id="ph4"><img src="https://yvdirectory.org/rivu/image4.jpg"></div>
+		<div class="images" id="ph5"><img src="https://yvdirectory.org/rivu/image5.jpg"></div>
+		<div class="images"><img src="https://yvdirectory.org/rivu/image6.jpg"></div>
+		<div class="images"><img src="https://yvdirectory.org/rivu/image7.jpg"></div>
+		<div class="images"><img src="https://yvdirectory.org/rivu/image8.jpg"></div>
+		<div class="images"><img src="https://yvdirectory.org/rivu/image9.jpg"></div>
+		<div class="images"><img src="https://yvdirectory.org/rivu/image10.jpg"></div>
+	</div>
+
+</body>
+</html>
